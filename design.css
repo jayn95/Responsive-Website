@@ -341,7 +341,7 @@
         margin-left: 2.5%;
         background-color: rgb(27, 23, 19);
         max-height: 100%; 
-        height: 150vh;
+        height: 168vh;
         margin-bottom: 3%;
     }
     .background{
@@ -349,10 +349,10 @@
         width: 90%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
         grid-gap: 0;
         color: white;
-        font-size: 10px;
+        font-size: 11px;
     }
     
     .background img:hover{
@@ -370,8 +370,8 @@
         height: auto;
         margin-top: 5vh;
         margin-bottom: 1vh;
-        width: 105px;
-        height: 105px;
+        width: 125px;
+        height: 125px;
         transition: .5s;
         display: block; margin-left: auto; margin-right: auto;
     }
