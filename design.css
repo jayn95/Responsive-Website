@@ -1,0 +1,399 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* -------------------------- imported fonts ----------------------------*/
+
+@font-face { 
+    font-family: "Canter"; 
+    src: url(font/Canter-Light.ttf)
+}
+@font-face { 
+    font-family: "Product"; 
+    src: url(font/Product.ttf)
+}
+@font-face { 
+    font-family: "Canter-Bold"; 
+    src: url(font/Canter-Bold.ttf)
+}
+@font-face{
+    font-family: "Leomarle";
+    src: url(font/leomarle.ttf);
+}
+
+/* -------------------------- design for desktop ----------------------------*/
+
+@media (min-width: 768px) {
+    body{
+        background-color: rgb(228, 226, 226);
+    }
+    header{
+        position: absolute;
+        width: 100%;
+        background-color: rgb(27, 23, 19);
+        height: 15vh;
+        display: flex;
+    }
+    header h2{
+        float: left;
+        margin-top: 3.5%;
+        margin-right: auto;
+        font-size: 5vh;
+        font-family: "Leomarle";
+        color:rgb(228, 226, 226); 
+    }
+    .navbar{
+        margin-bottom: auto; 
+        margin-top: auto;
+        margin-right: 5%;
+        padding: 35px 0;
+    }
+    .logo{
+        max-width: 100%;
+        cursor: pointer;
+        margin-top: 0.5%;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+    .page{
+        margin-left: 75%;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+        margin-top: -25%;
+        position: relative;
+    }
+    .navbar ul li a{
+        font-family: "Product";
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.5vh;
+    }
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #ea8b1f;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+
+    /* -------------------------- first section ----------------------------*/
+
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(70, 64, 64, 0.75),rgba(56, 52, 52, 0.75)), url(img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        text-align: center; 
+    }
+    .cover_title{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .cover_title h1{
+        font-size: 12vh;
+        font-family: "Product";
+        margin-top: -13%;
+        color: white;
+    }
+    .cover_title p{
+        font-size: 4vh;
+        font-family: "Product";
+        letter-spacing: 4px; 
+        margin-top: 0.5%;
+        color: white;
+    }
+    
+    .order a {
+        text-decoration: none;
+        color: white;
+    }
+    .order button{
+        position: relative;
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin-top: 420px;
+        border-radius: 14px;
+        font-weight: bold;
+        border: 2px solid #ea8b1f;
+        background:#ea8b1f;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .order button:hover {
+        background: none;
+    }
+
+    /* -------------------------- menu ----------------------------*/
+    .box {
+        position: relative;
+        margin-top: -10%;
+        background-color: transparent;
+    }
+    .bg {
+        width: 95%;
+        margin-left: 2.5%;
+        background-color: rgb(27, 23, 19);
+        max-height: 100%; 
+        height: 155vh;
+        margin-bottom: 3%;
+    }
+    .background{
+        font-family: "Product";
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 5vh;
+        color: white;
+    }
+
+    .background img:hover{
+        transform: scale(0.9);
+    }
+
+    .pic{
+        position: relative;
+        height: 350px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .pic img{
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        margin-top: 7vh;
+        margin-bottom: 2vh;
+        width: 35vh;
+        height: 35vh;
+        transition: .5s;
+    }
+
+    .pic p {
+        text-align: center;
+    }
+    /* -------------------------- footer ----------------------------*/
+
+    footer {
+        position: absolute;
+        background-color: #000;
+        width: 100%;
+        height: 15vh;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    h6 {
+        margin-top: 4%;
+        color: white;
+        font-family: "Product";
+        font-size: 2vh;
+    }
+}
+
+/* -------------------------- design for mobile ----------------------------*/
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    body {
+        background-color: lightyellow;
+    }
+    header{
+        position: absolute;
+        width: 100%;
+        background-color: rgb(27, 23, 19);
+        height: 8vh;
+        display: flex;
+    }
+    header h2{
+        float: left;
+        margin-top: 5.5%;
+        margin-right: auto;
+        font-size: 15px;
+        font-family: "Leomarle";
+        color:rgb(228, 226, 226); 
+    }
+    .logo{
+        max-width: 100px;
+        cursor: pointer;
+        margin-top: 0.5%;
+        margin-left: 2%;
+        margin-right: 1%;
+    }
+    .page{
+        margin-left: 75%;
+    }
+
+    .navbar{
+        margin-bottom: auto; 
+        /* margin-top: auto; */
+        margin-right: 3%;
+        padding: 18px 0;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 3px;
+        margin-top: -25%;
+        position: relative;
+    }
+    .navbar ul li a{
+        font-family: "Product";
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px;
+    }
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #ea8b1f;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+
+    /* -------------------------- first section ----------------------------*/
+
+    .banner{
+        width: 100%;
+        height: 50vh;
+        background-image: linear-gradient(rgba(70, 64, 64, 0.75),rgba(56, 52, 52, 0.75)), url(img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        text-align: center; 
+    }
+    .cover_title{
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .cover_title h1{
+        font-size: 35px;
+        font-family: "Product";
+        margin-top: -13%;
+        color: white;
+    }
+    .cover_title p{
+        font-size: 15px;
+        font-family: "Product";
+        letter-spacing: 4px; 
+        margin-top: 0.5%;
+        color: white;
+    }  
+    .order a {
+        text-decoration: none;
+        color: white;
+    }
+    .order button{
+        position: relative;
+        width: 125px;
+        padding: 10px 0;
+        text-align: center;
+        margin-top: 200px;
+        border-radius: 14px;
+        font-weight: bold;
+        border: 2px solid #ea8b1f;
+        background:#ea8b1f;
+        color: #fff;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    
+    .order button:hover {
+        background: none;
+    }
+
+    /* -------------------------- menu ----------------------------*/
+
+    .box {
+        position: relative;
+        margin-top: -10%;
+        background-color: transparent;
+    }
+    .bg {
+        width: 95%;
+        margin-left: 2.5%;
+        background-color: rgb(27, 23, 19);
+        max-height: 100%; 
+        height: 150vh;
+        margin-bottom: 3%;
+    }
+    .background{
+        font-family: "Product";
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 0;
+        color: white;
+        font-size: 10px;
+    }
+    
+    .background img:hover{
+        transform: scale(0.9);
+    }
+    
+    .pic{
+        position: relative;
+        cursor: pointer;
+        transition: .5s;
+        margin-bottom: -10px;
+    }
+    .pic img{
+        max-width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+        width: 105px;
+        height: 105px;
+        transition: .5s;
+        display: block; margin-left: auto; margin-right: auto;
+    }
+    
+    .pic p {
+        text-align: center;
+    }
+    /* -------------------------- footer ----------------------------*/
+
+    footer {
+        position: absolute;
+        background-color: #000;
+        width: 100%;
+        height: 15vh;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    h6 {
+        margin-top: 12%;
+        color: white;
+        font-family: "Product";
+        font-size: 10px;
+    }
+}
