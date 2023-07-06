@@ -206,6 +206,154 @@
         font-family: "Product";
         font-size: 2vh;
     }
+
+    /* -------------------------- contact page ----------------------------*/
+
+    .contact_background_img{
+        width: 100%;
+        height:100vh;
+        background-image: linear-gradient(rgba(70, 64, 64, 0.75),rgba(56, 52, 52, 0.75)), url(img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+    }
+    .contact-form {
+        font-family: "Product";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 600px;
+        width: 90%;
+        padding: 20px;
+        background-color: rgba(118, 118, 118, 0.75);
+        border-radius: 4px;
+        color: white;
+        margin-top: 6%;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 96%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ea8b1f;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #ea8b1f;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ea8b1f;
+    }
+    /* -------------------------- social media ----------------------------*/
+
+    .social{
+        background-color:rgb(27, 23, 19);
+        margin-top: 0;
+        height: 40vh;
+    }
+    .social h1{
+        font-family: "Product";
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 4px;
+        padding: 5% 0 5%;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .social-media a{
+        display: flex;
+        background: rgb(255, 255, 255);
+        height: 75px;
+        width: 75px;
+        margin: 0 15px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+        -6px -6px 10px -1px rgb(27, 23, 19);
+        border: 1px solid rgba(0,0,0,0);
+        transition: transform 0.5s;
+    }
+
+    .social-media a i{
+        font-size: 35px;
+        color: rgb(97, 69, 55);
+        transition: transform 0.5s;
+    }
+
+    .social-media a:hover{
+        box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+        -4px -4px 6px -1px rgba(50, 45, 42, 0.75),
+        -0.5px -0.5px 0px rgba(50, 45, 42, 0.75),
+        0.5px 0.5px 0px rgba(0,0,0,0.15),
+        0px 12px 10px -10px rgba(0,0,0,0.05);
+        border: 1px solid rgba(0,0,0,0.1);
+
+        transform: translateY(2px);
+    } 
+
+    .social-media a:hover i{
+        transform: scale(0.90);
+    }
+
+    .social-media a:hover .fa-facebook{
+        color: #3b5998;
+    }
+
+    .social-media a:hover .fa-whatsapp{
+        color: #4fce5d;
+    }
+
+    .social-media a:hover .fa-twitter{
+        color: #00acee;
+    }
+    .social-media a:hover .fa-instagram{
+        color: #f14843;
+    }
+    .social-media a:hover .fa-youtube{
+        color: #f00;
+    }
 }
 
 /* -------------------------- design for mobile ----------------------------*/
@@ -385,15 +533,165 @@
         position: absolute;
         background-color: #000;
         width: 100%;
-        height: 15vh;
+        height: 8vh;
         text-align: center;
         margin-bottom: 0;
     }
 
     h6 {
-        margin-top: 12%;
+        margin-top: 5%;
         color: white;
         font-family: "Product";
         font-size: 10px;
+    }
+    /* -------------------------- contact page ----------------------------*/
+
+    .contact_background_img{
+        width: 100%;
+        height:100vh;
+        background-image: linear-gradient(rgba(70, 64, 64, 0.75),rgba(56, 52, 52, 0.75)), url(img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+    }
+    .contact-form {
+        font-family: "Product";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 400px;
+        width: 80%;
+        padding: 20px;
+        background-color: rgba(118, 118, 118, 0.75);
+        border-radius: 4px;
+        color: white;
+        margin-top: 6%;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        margin-right: 4%;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        font-family: "Product";
+        width: 96%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ea8b1f;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #ea8b1f;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ea8b1f;
+    }
+
+    /* -------------------------- social media ----------------------------*/
+
+    .social{
+        background-color:rgb(27, 23, 19);
+        margin-top: 0;
+        height: 20vh;
+    }
+    .social h1{
+        font-family: "Product";
+        font-weight: normal;
+        font-size: 13px;
+        letter-spacing: 4px;
+        padding: 10% 0 5%;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .social-media a{
+        display: flex;
+        background: rgb(255, 255, 255);
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+        -6px -6px 10px -1px rgb(27, 23, 19);
+        border: 1px solid rgba(0,0,0,0);
+        transition: transform 0.5s;
+    }
+
+    .social-media a i{
+        font-size: 20px;
+        color: rgb(97, 69, 55);
+        transition: transform 0.5s;
+    }
+
+    .social-media a:hover{
+        box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+        -4px -4px 6px -1px rgba(50, 45, 42, 0.75),
+        -0.5px -0.5px 0px rgba(50, 45, 42, 0.75),
+        0.5px 0.5px 0px rgba(0,0,0,0.15),
+        0px 12px 10px -10px rgba(0,0,0,0.05);
+        border: 1px solid rgba(0,0,0,0.1);
+
+        transform: translateY(2px);
+    } 
+
+    .social-media a:hover i{
+        transform: scale(0.90);
+    }
+
+    .social-media a:hover .fa-facebook{
+        color: #3b5998;
+    }
+
+    .social-media a:hover .fa-whatsapp{
+        color: #4fce5d;
+    }
+
+    .social-media a:hover .fa-twitter{
+        color: #00acee;
+    }
+    .social-media a:hover .fa-instagram{
+        color: #f14843;
+    }
+    .social-media a:hover .fa-youtube{
+        color: #f00;
     }
 }
