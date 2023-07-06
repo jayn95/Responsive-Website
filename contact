@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Tastings</title>
+        <link rel="stylesheet" href="design.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="contact_background_img">
+            <header>
+                <img src="img/official_logo.png" class="logo">
+                <h2>Coffee Tastings</h2>
+
+                <div class="navbar">
+                    <ul>
+                        <li><a class="active" href="index.html">HOME</a></li>
+                        <li><a>|</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Contact Number:</label>
+                        <input type="text" id="number" name="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="social">
+            <h1>FOLLOW US ON SOCIAL MEDIA</h1>
+    
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <footer>
+            <h6>&copy;Copyright Reserved 2023 COFFEE TASTINGS</h6>
+        </footer>
+    </body>
+</html>
